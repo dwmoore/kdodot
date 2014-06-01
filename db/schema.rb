@@ -11,17 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140601164335) do
+ActiveRecord::Schema.define(version: 20140601150756) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "todo_items", force: true do |t|
-    t.integer  "todo_list_id"
-    t.string   "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "todo_lists", force: true do |t|
     t.string   "title"
