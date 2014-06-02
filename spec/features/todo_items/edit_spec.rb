@@ -4,18 +4,12 @@ describe "Editing todo items" do
 	let!(:todo_list) { TodoList.create(title: "My title", description: "My description") }
 	let!(:todo_item) { todo_list.todo_items.create(content: "Milk") }
 
-	def visit_todo_list(list)
-		visit "/todo_lists"
-		within "#todo_list_#{todo_list.id}" do
-			click_link "List Items"
-		end
-	end
-
 	it "is successful with valid content" do
 		visit_todo_list(todo_list)
 		within("#todo_item_#{todo_item.id}") do
 			click_link "Edit"
 		end
+
 		fill_in "Content", with: "Lots of milk"
 		click_button "Save"
 
@@ -30,6 +24,7 @@ describe "Editing todo items" do
 		within("#todo_item_#{todo_item.id}") do
 			click_link "Edit"
 		end
+
 		fill_in "Content", with: ""
 		click_button "Save"
 
@@ -45,6 +40,7 @@ describe "Editing todo items" do
 		within("#todo_item_#{todo_item.id}") do
 			click_link "Edit"
 		end
+		
 		fill_in "Content", with: "1"
 		click_button "Save"
 
