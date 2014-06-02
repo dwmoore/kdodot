@@ -1,28 +1,12 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my version of the Team Treehouse Odot series.  Here are the milestones so far:
 
-Things you may want to cover:
+1. Had a controller mishap when I mistakenly ran a generator with the wrong fields. This resulted in a branch to revert to an earlier state and resume development.  Corrected the isseue and merged the branch back to master.
 
-* Ruby version
+2. CSS, Table and H1 changes at the end of the video break several tests, which seem to go undocumented in the tutorial.  The issues are mostly in the todo_items specs and corresponging views.  BTW, Thanks guys for the cut and paste 2 seconds of video on the css... That was fun to pause and copy.  Maybe we could get that in the notes below the vid?
 
-* System dependencies
+Hopefully this will both show some of my early progress as well as help those who come along behind.  More to come...
 
-* Configuration
+Cheers! 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
