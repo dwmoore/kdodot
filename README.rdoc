@@ -6,6 +6,8 @@ This is my version of the Team Treehouse Odot series.  Here are the milestones s
 
 2. CSS, Table and H1 changes at the end of the video break several tests, which seem to go undocumented in the tutorial.  The issues are mostly in the todo_items specs and corresponging views.  BTW, Thanks guys for the cut and paste 2 seconds of video on the css... That was fun to pause and copy.  Maybe we could get that in the notes below the vid?
 
+3. Finished part 1 of the project and cleaned up a few more broken specs.  On to part 2 (User Authentication with Rails).
+
 Hopefully this will both show some of my early progress as well as help those who come along behind.  More to come...
 
 Cheers! 
