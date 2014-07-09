@@ -2,9 +2,9 @@ require 'spec_helper'
 
 describe "Viewing todo items" do
 
-	let(:user) { create(:user) }
-	let!(:todo_list) { TodoList.create(title: "My title", description: "My description") }
-
+	let(:user) { todo_list.user }
+	let!(:todo_list) { todo_list = create(:todo_list) }
+	
 	before do
 		sign_in user, password: "treehouse1"
 	end

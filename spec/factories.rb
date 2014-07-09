@@ -8,4 +8,10 @@ FactoryGirl.define do
 		password_confirmation "treehouse1"
 	end
 
+	factory :todo_list do
+		title "Todo List Title"
+		description "Todo List Description"
+		user
+	end
+
 end
